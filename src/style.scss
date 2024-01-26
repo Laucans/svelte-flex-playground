@@ -1,0 +1,58 @@
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container.main-container {
+  height: 100vh;
+  grid-template-areas: "sidebar header header"
+                       "sidebar content content"
+                       "sidebar content content";
+                       grid-template-columns: 1fr 8fr;
+                       grid-template-rows: 1fr 10fr;
+
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.grid-sidebar-container {
+  display: grid;
+  direction: column;
+  min-height: 10vh;
+}
+
+.sidebar-item{
+    &:hover{
+    background-color: ghostwhite;
+  }
+}
+.content {
+    overflow: hidden;
+}
+
+.scroll-container {
+  flex-wrap: wrap;
+  align-items:center;
+  // background-color: red;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.child {
+  width: max-content;
+  height: max-content;
+}
+ 

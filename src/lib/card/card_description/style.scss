@@ -1,0 +1,29 @@
+.card-description-flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.border-white {
+  border-color: white;
+  border-style: dashed;
+  border-width:0.5vh;
+  border-radius: 12%;
+  // background-color: yellow;
+  min-height: 25vh;
+  min-width: 50vh;
+}
+
+
+.card-description-flex-child:nth-child(1) {
+color: aqua;
+flex-grow: 10;
+}
+
+.card-description-flex-child:nth-child(2) {
+color: white;
+flex-grow: 1;
+text-align: center;
+}

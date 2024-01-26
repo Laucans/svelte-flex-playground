@@ -1,0 +1,10 @@
+.card-description{
+  position: relative;
+  margin-top: calc(-10% - 10vh);
+  font-size: clamp(12px, 1.6vw, 300px);
+}
+
+.card-visual {
+  position:relative;
+  z-index: 100;
+}
